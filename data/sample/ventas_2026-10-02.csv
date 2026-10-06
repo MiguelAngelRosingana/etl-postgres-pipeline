@@ -1,0 +1,37 @@
+id_venta,fecha,cliente_email,cliente_nombre,producto,categoria,cantidad,precio_unitario,estado
+V000050,2026-10-02,hugo.cano@mail.com,Hugo Cano,Portátil,Informática,2,899.00,pagado
+V000051,2026-10-02,luis.gil@mail.com,Luis Gil,Portátil,Informática,1,899.00,pagado
+V000052,2026-10-02,ana.ruiz@mail.com,Ana Ruiz,Ratón,Informática,3,19.90,pendiente
+V000053,2026-10-02,sara.leon@mail.com,Sara León,Monitor,Informática,4,189.00,pagado
+V000054,2026-10-02,hugo.cano@mail.com,Hugo Cano,Teclado,Informática,4,44.50,pagado
+V000055,2026-10-02,lucia.mora@mail.com,Lucía Mora,Altavoz,Audio,2,79.00,pendiente
+V000056,2026-10-02,lucia.mora@mail.com,Lucía Mora,Ratón,Informática,3,19.90,cancelado
+V000057,2026-10-02,diego.sanz@mail.com,Diego Sanz,Auriculares,Audio,1,59.00,pendiente
+V000058,2026-10-02,lucia.mora@mail.com,Lucía Mora,Portátil,Informática,3,899.00,pendiente
+V000059,2026-10-02,pablo.vega@mail.com,Pablo Vega,Monitor,Informática,2,189.00,cancelado
+V000060,2026-10-02,lucia.mora@mail.com,Lucía Mora,Teclado,Informática,2,44.50,enviado
+V000061,2026-10-02,pablo.vega@mail.com,Pablo Vega,Altavoz,Audio,1,79.00,cancelado
+V000062,2026-10-02,ana.ruiz@mail.com,Ana Ruiz,Ratón,Informática,1,19.90,pendiente
+V000063,2026-10-02,marta.soto@mail.com,Marta Soto,Monitor,Informática,4,189.00,cancelado
+V000064,2026-10-02,pablo.vega@mail.com,Pablo Vega,Altavoz,Audio,4,79.00,pendiente
+V000065,2026-10-02,lucia.mora@mail.com,Lucía Mora,Teclado,Informática,1,44.50,cancelado
+V000066,2026-10-02,diego.sanz@mail.com,Diego Sanz,Silla,Hogar,3,119.00,cancelado
+V000067,2026-10-02,marta.soto@mail.com,Marta Soto,Altavoz,Audio,2,79.00,enviado
+V000068,2026-10-02,ana.ruiz@mail.com,Ana Ruiz,Monitor,Informática,1,189.00,enviado
+V000069,2026-10-02,ana.ruiz@mail.com,Ana Ruiz,Portátil,Informática,4,899.00,pagado
+V000070,2026-10-02,elena.rey@mail.com,Elena Rey,Portátil,Informática,1,899.00,pagado
+V000071,2026-10-02,hugo.cano@mail.com,Hugo Cano,Ratón,Informática,1,19.90,pagado
+V000072,2026-10-02,luis.gil@mail.com,Luis Gil,Auriculares,Audio,2,59.00,pendiente
+V000073,2026-10-02,lucia.mora@mail.com,Lucía Mora,Ratón,Informática,3,19.90,enviado
+V000074,2026-10-02,raul.nieto@mail.com,Raúl Nieto,Monitor,Informática,2,189.00,enviado
+V000003,2026-10-01,  ANA.RUIZ@Mail.com ,ana ruiz,Auriculares,Audio,1,59.00,enviado
+V000007,2026-10-01,marta.soto@mail.com,Marta Soto,Silla,Hogar,2,119.00,cancelado
+V000012,2026-10-01,luis.gil@mail.com,Luis Gil,Monitor,Informática,1,189.00,pagado
+V000015,2026-10-01,raul.nieto@mail.com,Raúl Nieto,Teclado,Informática,3,44.50,enviado
+V000020,2026-10-01,pablo.vega@mail.com,Pablo Vega,Ratón,Informática,4,19.90,pagado
+V000025,2026-10-01,luis.gil@mail.com,Luis Gil,Portátil,Informática,3,899.00,pagado
+V000030,2026-10-01,ana.ruiz@mail.com,Ana Ruiz,Altavoz,Audio,4,79.00,pagado
+V000090,2026-10-02,hugo.cano@mail.com,Hugo Cano,Monitor,Informática,1,abc,pagado
+V000091,2026-10-02,elena.rey@mail.com,Elena Rey,Altavoz,Audio,1,79.00,devuelto
+V000092,2026-10-02,diego.sanz@mail.com,Diego Sanz,,Hogar,1,29.90,pagado
+V000093,2099-01-01,raul.nieto@mail.com,Raúl Nieto,Ratón,Informática,2,19.90,pendiente

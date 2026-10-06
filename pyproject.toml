@@ -1,0 +1,15 @@
+[project]
+name = "etl-postgres-pipeline"
+version = "0.1.0"
+description = "Pipeline ETL idempotente de ventas hacia PostgreSQL"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

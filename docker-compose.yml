@@ -1,0 +1,24 @@
+services:
+  db:
+    image: postgres:16
+    container_name: etl_postgres
+    environment:
+      POSTGRES_USER: etl
+      POSTGRES_PASSWORD: etl
+      POSTGRES_DB: etl_demo
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Se ejecutan por orden alfabético solo la primera vez que se crea el volumen
+      - ./docker/00_bd_pruebas.sql:/docker-entrypoint-initdb.d/000_bd_pruebas.sql:ro
+      - ./sql/001_esquema.sql:/docker-entrypoint-initdb.d/001_esquema.sql:ro
+      - ./sql/002_vistas.sql:/docker-entrypoint-initdb.d/002_vistas.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U etl -d etl_demo"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:
