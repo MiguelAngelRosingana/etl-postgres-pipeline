@@ -205,5 +205,19 @@ Lo que este proyecto **no** hace, y qué ha pasado con cada punto:
 
 ## Qué he aprendido
 
-> Escribe aquí, con tus palabras, 3 o 4 líneas: qué te costó más, qué decisión cambiarías y
-> qué harías con más tiempo. Es lo primero que un entrevistador lee.
+- **Los datos inventados solo ponen a prueba lo que ya imaginaba.** Los errores del CSV de ejemplo
+  los puse yo, así que mis validaciones los cazan todos. Lo que no sé es qué errores traería un
+  fichero real. Por eso el siguiente proyecto,
+  [energia-espana-pipeline](https://github.com/MiguelAngelRosingana/energia-espana-pipeline), usa
+  una fuente real: ahí aparecieron problemas que no se me habrían ocurrido.
+- **Idempotente no es una sola cosa.** Para no duplicar hacen falta dos mecanismos distintos: el
+  upsert por clave protege las filas y la huella del fichero evita reprocesarlo entero. Cada uno
+  cubre un caso que el otro no.
+- **Probar contra una base de datos real cambia lo que puedo afirmar.** Con PostgreSQL de verdad en
+  los tests puedo demostrar el rollback ante un fallo a mitad de carga y la clave foránea que
+  protege las ventas; con mocks solo lo supondría.
+- **«En mi máquina funciona» también me pasó.** El CI se puso rojo en el primer commit porque
+  `pytest` a secas no encontraba el paquete (en local lo ejecutaba con `python -m pytest`). Lo
+  resolví añadiendo `pythonpath = ["."]` a la configuración de pytest.
+- **Con más tiempo** empezaría por gestionar los borrados del origen y por pasar las
+  transformaciones SQL a dbt.
