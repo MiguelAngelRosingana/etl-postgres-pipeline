@@ -8,6 +8,11 @@ fichero sin duplicar datos, y si algo falla no deja la base de datos a medias.
 > (emails inválidos, cantidades negativas, fechas imposibles, ids repetidos y correcciones del día
 > anterior) para demostrar cómo se gestionan.
 
+> **Continuación:** el siguiente proyecto, [energia-espana-pipeline](https://github.com/MiguelAngelRosingana/energia-espana-pipeline),
+> lleva estas ideas a una fuente viva y real (API de Red Eléctrica): carga **incremental con marca
+> de agua**, controles de calidad en SQL, ejecución diaria con GitHub Actions y un informe de
+> Power BI encima.
+
 ## Qué demuestra
 
 | Habilidad | Dónde verla |
@@ -187,12 +192,16 @@ docs/           cómo explicar el proyecto en una entrevista
 
 ## Límites y siguientes pasos
 
-- Carga por fichero completo. Un siguiente paso es una **carga incremental con marca de agua**
-  contra una fuente viva.
+Lo que este proyecto **no** hace, y qué ha pasado con cada punto:
+
+- Carga por fichero completo. La **carga incremental con marca de agua** contra una fuente viva está
+  resuelta en [energia-espana-pipeline](https://github.com/MiguelAngelRosingana/energia-espana-pipeline).
+- Se ejecuta a mano. En energia-espana-pipeline sí se programa con **GitHub Actions** (ejecución diaria);
+  aquí sigue pendiente, y un orquestador como **Airflow** no lo he usado en ninguno de los dos.
 - No gestiona **borrados** del origen: solo altas y modificaciones.
-- Se ejecuta a mano. Siguiente paso: programarlo con cron, GitHub Actions o **Airflow**.
-- Conectar **Power BI** a `core.v_ventas_mensuales` para tener un cuadro de mando.
-- Mover las transformaciones SQL a **dbt**.
+- Falta un cuadro de mando de **Power BI** sobre `core.v_ventas_mensuales`; sí lo hay, con la misma
+  idea, sobre el modelo de energía.
+- Las transformaciones SQL no están en **dbt**: es el siguiente paso natural.
 
 ## Qué he aprendido
 
